@@ -36,8 +36,8 @@ document.getElementById("sac").innerHTML = obj.data.length +" records passed fro
 //call the getPost() function and pass in the JSON object
 getPost(obj);
 }, false);
-//use this function to send the JSON object to the JSP page and listen for the results of the
-upload
+
+//use this function to send the JSON object to the JSP page and listen for the results of the upload
 function getPost(obj){
 var loadData=new XMLHttpRequest();
 loadData.onreadystatechange=function()
