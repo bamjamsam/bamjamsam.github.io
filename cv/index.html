@@ -48,7 +48,7 @@ document.getElementById("jsp").innerHTML = loadData.responseText;
 window.parent.postMessage(loadData.responseText,"*");
 }
 }
-loadData.open("POST","loadRecords.jsp",true);
+loadData.open("POST","/cv/loadRecords.jsp",true);
 loadData.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 loadData.send("data="+JSON.stringify(obj));
 }
